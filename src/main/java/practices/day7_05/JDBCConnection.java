@@ -15,9 +15,9 @@ public class JDBCConnection {
     public static void main(String[] args) {
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "27112222");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/itheima", "root", "27112222");
             Statement statement = connection.createStatement();
-            statement.execute("INSERT INTO ");
+            statement.execute("INSERT INTO citizen() values (null,'007','Huong',27,'Bac Giang')");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         } catch (ClassNotFoundException e) {
