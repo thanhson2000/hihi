@@ -19,6 +19,7 @@ public class JDBCConnection {
             Statement statement = connection.createStatement();
             statement.execute("INSERT INTO citizen() values (null,'007','Huong',27,'Bac Giang')");
             System.out.println(" SQL insert into successful");
+            System.out.println("hahaha");
             // 修复 catch 的bug
         } catch (SQLException | ClassNotFoundException e) {
             throw new RuntimeException(e);
