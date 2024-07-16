@@ -18,10 +18,8 @@ public class JDBCConnection {
             Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/itheima", "root", "27112222");
             Statement statement = connection.createStatement();
             statement.execute("INSERT INTO citizen() values (null,'007','Huong',27,'Bac Giang')");
-        } catch (SQLException e) {
+        } catch (SQLException ｜ ClassNotFoundException e) {
             throw new RuntimeException(e);
-        } catch (ClassNotFoundException e) {
-            throw new RuntimeException(e);
-        }
+        } 
     }
 }
